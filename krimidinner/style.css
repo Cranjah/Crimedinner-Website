@@ -1,0 +1,612 @@
+body {
+    background-image: url(bilder/bg_pattern_mobile.jpg);
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+#gridbox {
+    max-width: 420px;
+    height: auto;
+    margin: 0px auto;
+}
+
+#wrapper {
+    display: grid;
+    grid-row-gap: 0px;
+    grid-template-columns: 420px;
+    grid-template-rows: 150px 84px 648px 84px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+#Logo {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+nav {
+    grid-area: nav;
+    box-shadow: -5px 3px 6px #000000;
+
+/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
+    background: #f7ac16;
+    background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
+    background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
+
+/** Hier beginnt Navigationsmenü **/
+/** float: left; **/
+    width: 100%;
+    font-size: 14pt;
+}
+
+#NavFlexBox {
+    display: flex;
+    width: 420px;
+    height: 84px;
+    justify-content: space-around;
+}
+
+/** HAMBURGER-MENÜ **/
+
+#menu-btn {
+/** float: left; **/
+    margin-top: 9px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 54px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    padding: 5px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+ul#menu {
+    display: none;
+}
+
+div#searchbar {
+    display: none;
+}
+
+
+/** Münch Suche - Anfang:
+
+#search:checked ~div#searchbar {
+    display: block;
+}
+
+#search:checked ~ h1 {
+    display: none;
+} 
+
+Münch Suche -Ende **/
+
+
+/** Klukkert Suche - Anfang
+
+#search:checked ~ section#UmSearch #searchbar {
+    display: block;
+    z-index: 70;
+    background: red;
+    margin-top: 30px;
+}
+
+#suchfeld {
+    width: 200px;
+    height: 30px;
+}
+
+
+#search:checked ~ section#UmSearch {
+    position: absolute;
+    margin: 0px auto;
+    width: 400px;
+    height: 85px;
+    background: green;
+    text-align: center;
+}
+
+Klukkert Suche - Ende **/
+
+
+li {
+    display: block;
+
+/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
+    background: #f7ac16;
+    background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
+    background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
+
+    padding: 5px;
+    box-shadow: -5px 3px 6px #000000;
+    margin: 17px auto;
+    padding: 10px 31px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: bodega-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17pt;
+    color: black;
+    text-decoration: none;
+}
+
+#responsive-nav:checked ~ ul#menu {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    line-height: 220%;
+    text-align: left;
+    margin: 85px auto;
+    padding: 95px 95px 75px 95px;
+
+/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
+    background: #f7ac16;
+    background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
+    background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
+
+}
+
+#search-btn {
+/** float: right; **/
+    margin-right: 22px;
+    margin-top: 8px;
+    font-size: 54px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+.left {
+    float: left;
+    width: 22px;
+    color: black;
+}
+
+.right {
+    float: right;
+    width: 22px;
+    color: black;
+}
+
+/** h1: Bodega Sans Black 20pt **/
+
+/** h2: Bodega Sans Medium 17pt **/
+
+/** p: Mostra Nuova Light 14pt
+
+Auszeichnung h3: Mostra Nuova Regular 14pt
+
+Auszeichnung h4: Mostra Nuova Bold 14pt **/
+
+h1 {
+    width: auto;
+    height: auto;
+    font-family: bodega-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    margin-left: 6px;
+}
+
+h2 {
+    font-family: bodega-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17pt;
+    color: white;
+}
+
+h3 {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: white;
+}
+
+h4 {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: white;
+}
+
+p {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: white;
+}
+
+hr {
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 1px;
+}
+
+a:link, a:active, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#footer {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    text-align: center;
+    color: black;
+}
+
+main {
+    grid-area: main;
+    width: 292px;
+    height: 648px;
+    background-color: rgb(13, 13, 13);
+    overflow: auto;
+    padding: 0px 22px;
+    margin: 0px auto;
+    overflow-x: hidden;
+}
+
+.photos {
+    display: block;
+    width: 292px;
+    height: 210px;
+    margin: 10px auto;
+    border: 1px solid rgb(155, 155, 155);
+}
+
+legend {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: white;
+}
+
+label {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: white;
+}
+
+#name, #email {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: black;
+}
+
+textarea {
+    width: 239px;
+    height: 150px;
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: black;
+}
+
+fieldset {
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 1px;
+}
+
+#submit {
+    font-family: mostra-nuova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14pt;
+    line-height: 120%;
+    color: black;
+    margin: 8px 0px;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    box-shadow: -5px 3px 6px #000000;
+
+/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
+    background: #f7ac16;
+    background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
+    background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
+}
+
+@media screen and (min-width: 768px) {
+    #gridbox {
+        max-width: 768px;
+    }
+    
+    #wrapper {
+        display: grid;
+        grid-row-gap: 0px;
+        grid-template-columns: 768px;
+        grid-template-rows: 150px 84px 648px 84px;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+    #NavFlexBox {
+        display: flex;
+        width: 768px;
+        height: 84px;
+        justify-content: space-around;
+    }
+
+    #menu-btn { 
+    /* float: left; */
+        margin-top: 9px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    #responsive-nav:checked ~ ul#menu {
+        padding: 95px 95px 75px 95px;
+    }
+
+    #search-btn {
+    /* float: right; */
+        margin-right: 22px;
+        margin-top: 8px;
+        padding: 5px;
+    }
+
+    li {
+        display: block;
+        margin: 17px auto;
+        padding: 10px 191px;
+        font-size: 20pt;
+    }
+
+    main {
+        width: 616px;
+        height: 648px;
+    }
+
+    #Logo {
+        width: 420px;
+        margin: auto auto;
+    }
+
+    .photos {
+        display: block;
+        margin: auto auto;
+        width: 596px;
+        height: 429px;
+        border: 2px solid rgb(155, 155, 155);
+    }
+
+    h1 {
+        font-size: 28pt;
+        margin-right: 100px;
+    }
+
+    h2 {
+        font-size: 24pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+
+    h4 {
+        font-size: 16pt;
+    }
+
+    p {
+        font-size: 16pt;
+    }
+
+    legend {
+        font-size: 16pt;
+    }
+
+    label {
+        font-size: 16pt;
+    }
+
+    textarea {
+        font-size: 16pt;
+    }
+
+    #footer {
+        font-size: 16pt;
+        height: auto;
+        margin: 18px auto;
+    }
+
+    #name, #email {
+        display: block;
+        width: 350px;
+        font-size: 16pt;
+    }
+
+    textarea {
+        display: block;
+        width: 563px;
+        margin: 18px 0px;
+    }
+}
+
+/** Desktop-Ansicht noch nicht fehlerfrei!
+@media screen and (min-width: 1920px) {
+    #gridbox {
+        max-width: 1920px;
+        margin: 0 auto; 
+        padding: 0 0px;
+}
+
+    #wrapper {
+        display: grid;
+        grid-row-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 84px 696px 84px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+}
+
+    #NavFlexBox {
+        display: flex;
+        width: 1920px;
+        height: 84px;
+        justify-content: space-around;
+        margin: 0 auto; 
+    }
+
+    #menu-btn {
+        display: none;
+        /* margin-top: 9px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding: 5px; * (hier auskommentieren)
+    }
+
+    ul#menu {
+        display: block;
+        margin: auto auto;
+        padding: 0px 0px;
+    }
+
+    #responsive-nav:checked ~ ul#menu {
+        padding: 0px 0px;
+    }
+
+    #search-btn {
+        display: none;
+        /** margin-right: 22px;
+        margin-top: 8px;
+        width: 30px;
+        height: 30px;
+        padding: 5px; * (hier auskommentieren)
+    }
+
+    li {
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+        margin: 0px auto;
+        padding: 10px 50px;
+    }
+
+    main {
+        width: 1454px;
+        height: 696px;
+    }
+
+    h1 {
+        display: none;
+        font-size: 30pt;
+    }
+
+    h2 {
+        margin: 30px 95px;
+        font-size: 29pt;
+    }
+
+    h3 {
+        margin: 30px 95px;
+        font-size: 20pt;
+    }                
+    
+    h4 {
+        margin: 30px 95px;
+        font-size: 20pt;
+    }
+
+    p {
+        margin: 30px 95px;
+        font-size: 20pt;
+    }
+
+    hr {
+        margin: 30px auto;
+    }
+
+    .photos {
+        width: 1152px;
+        height: 829px;
+    }
+
+    fieldset {
+        margin: 0px 95px;
+    }
+
+    legend {
+        font-size: 20pt;
+    }
+
+    label {
+        font-size: 20pt;
+    }
+
+    #name, #email {
+        width: 375px;
+        height: 30px;
+        font-size: 20pt;
+    }
+
+    textarea {
+        width: 850px;
+        height: 200px;
+        font-size: 20pt;
+    }
+    Desktop-Ansicht noch nicht fehlerfrei! **/ 
+}
