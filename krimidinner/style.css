@@ -386,7 +386,7 @@ footer {
     }
 
     #menu-btn { 
-    /* float: left; */
+    /** float: left; **/
         margin-top: 9px;
         margin-right: 100px;
         margin-bottom: 10px;
@@ -399,7 +399,7 @@ footer {
     }
 
     #search-btn {
-    /* float: right; */
+    /** float: right; **/
         margin-right: 22px;
         margin-top: 8px;
         padding: 5px;
@@ -512,7 +512,7 @@ footer {
 
     #menu-btn {
         display: none;
-        /* margin-top: 9px;
+        /** margin-top: 9px;
         margin-right: 50px;
         margin-bottom: 10px;
         margin-left: 10px;
