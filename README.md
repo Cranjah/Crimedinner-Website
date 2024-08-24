@@ -1,2 +1,2 @@
-# Crimedinner-Website
+## CRIMEDINNER-WEBSITE
 In here I present a website project, mainly written in HTML5 and CSS3 - and a minor part in JavaScript. The topic has been to develop and to design a onepager in HTML and CSS for a dinner event, the fictious customer has been the gastronomy company "Villa Bernstein". To see the website, please download the folder "krimidinner" and open the file "krimidinner_v9.html" in a web browser of your choice. The language of the website contents is German;
