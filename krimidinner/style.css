@@ -516,7 +516,7 @@ footer {
         margin-right: 50px;
         margin-bottom: 10px;
         margin-left: 10px;
-        padding: 5px; * (hier auskommentieren)
+        padding: 5px; (hier auskommentieren) --> *
     }
 
     ul#menu {
@@ -535,7 +535,7 @@ footer {
         margin-top: 8px;
         width: 30px;
         height: 30px;
-        padding: 5px; * (hier auskommentieren)
+        padding: 5px; (hier auskommentieren) --> *
     }
 
     li {
