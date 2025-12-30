@@ -35,16 +35,11 @@ header {
 nav {
     grid-area: nav;
     box-shadow: -5px 3px 6px #000000;
-
-/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
     background: #f7ac16;
     background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
     background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
-
-/** Hier beginnt Navigationsmenü **/
-/** float: left; **/
     width: 100%;
     font-size: 14pt;
 }
@@ -56,10 +51,7 @@ nav {
     justify-content: space-around;
 }
 
-/** HAMBURGER-MENÜ **/
-
 #menu-btn {
-/** float: left; **/
     margin-top: 9px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -84,57 +76,13 @@ div#searchbar {
     display: none;
 }
 
-
-/** Münch Suche - Anfang:
-
-#search:checked ~div#searchbar {
-    display: block;
-}
-
-#search:checked ~ h1 {
-    display: none;
-} 
-
-Münch Suche -Ende **/
-
-
-/** Klukkert Suche - Anfang
-
-#search:checked ~ section#UmSearch #searchbar {
-    display: block;
-    z-index: 70;
-    background: red;
-    margin-top: 30px;
-}
-
-#suchfeld {
-    width: 200px;
-    height: 30px;
-}
-
-
-#search:checked ~ section#UmSearch {
-    position: absolute;
-    margin: 0px auto;
-    width: 400px;
-    height: 85px;
-    background: green;
-    text-align: center;
-}
-
-Klukkert Suche - Ende **/
-
-
 li {
     display: block;
-
-/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
     background: #f7ac16;
     background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
     background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
-
     padding: 5px;
     box-shadow: -5px 3px 6px #000000;
     margin: 17px auto;
@@ -157,18 +105,14 @@ li {
     text-align: left;
     margin: 85px auto;
     padding: 95px 95px 75px 95px;
-
-/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
     background: #f7ac16;
     background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
     background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     background: linear-gradient(to right,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ac16', endColorstr='#996b11', GradientType=1);
-
 }
 
 #search-btn {
-/** float: right; **/
     margin-right: 22px;
     margin-top: 8px;
     font-size: 54px;
@@ -190,16 +134,6 @@ li {
     width: 22px;
     color: black;
 }
-
-/** h1: Bodega Sans Black 20pt **/
-
-/** h2: Bodega Sans Medium 17pt **/
-
-/** p: Mostra Nuova Light 14pt
-
-Auszeichnung h3: Mostra Nuova Regular 14pt
-
-Auszeichnung h4: Mostra Nuova Bold 14pt **/
 
 h1 {
     width: auto;
@@ -352,8 +286,6 @@ footer {
     height: auto;
     margin: 0px auto;
     box-shadow: -5px 3px 6px #000000;
-
-/** linear-gradient: to right, #F7AC16 20%, #996B11 60%, #F7AC16 70%, #996B11 85%,  #F7AC16 90%,  #996B11 100%; **/
     background: #f7ac16;
     background: -moz-linear-gradient(left,  #f7ac16 0%, #996b11 26%, #f7ac16 60%, #996b11 83%, #f7ac16 90%, #996b11 100%);
     background: -webkit-linear-gradient(left,  #f7ac16 0%,#996b11 26%,#f7ac16 60%,#996b11 83%,#f7ac16 90%,#996b11 100%);
@@ -481,132 +413,3 @@ footer {
         margin: 18px 0px;
     }
 }
-
-/** Desktop-Ansicht noch nicht fehlerfrei!
-@media screen and (min-width: 1920px) {
-    #gridbox {
-        max-width: 1920px;
-        margin: 0 auto; 
-        padding: 0 0px;
-}
-
-    #wrapper {
-        display: grid;
-        grid-row-gap: 0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 84px 696px 84px;
-        grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "footer";
-}
-
-    #NavFlexBox {
-        display: flex;
-        width: 1920px;
-        height: 84px;
-        justify-content: space-around;
-        margin: 0 auto; 
-    }
-
-    #menu-btn {
-        display: none;
-        /** margin-top: 9px;
-        margin-right: 50px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        padding: 5px; (hier mit "/" auskommentieren) --> *
-    }
-
-    ul#menu {
-        display: block;
-        margin: auto auto;
-        padding: 0px 0px;
-    }
-
-    #responsive-nav:checked ~ ul#menu {
-        padding: 0px 0px;
-    }
-
-    #search-btn {
-        display: none;
-        /** margin-right: 22px;
-        margin-top: 8px;
-        width: 30px;
-        height: 30px;
-        padding: 5px; (hier mit "/" auskommentieren) --> *
-    }
-
-    li {
-        display: inline-block;
-        width: 200px;
-        height: 30px;
-        margin: 0px auto;
-        padding: 10px 50px;
-    }
-
-    main {
-        width: 1454px;
-        height: 696px;
-    }
-
-    h1 {
-        display: none;
-        font-size: 30pt;
-    }
-
-    h2 {
-        margin: 30px 95px;
-        font-size: 29pt;
-    }
-
-    h3 {
-        margin: 30px 95px;
-        font-size: 20pt;
-    }                
-    
-    h4 {
-        margin: 30px 95px;
-        font-size: 20pt;
-    }
-
-    p {
-        margin: 30px 95px;
-        font-size: 20pt;
-    }
-
-    hr {
-        margin: 30px auto;
-    }
-
-    .photos {
-        width: 1152px;
-        height: 829px;
-    }
-
-    fieldset {
-        margin: 0px 95px;
-    }
-
-    legend {
-        font-size: 20pt;
-    }
-
-    label {
-        font-size: 20pt;
-    }
-
-    #name, #email {
-        width: 375px;
-        height: 30px;
-        font-size: 20pt;
-    }
-
-    textarea {
-        width: 850px;
-        height: 200px;
-        font-size: 20pt;
-    }
-}
-Desktop-Ansicht noch nicht fehlerfrei! **/ 
