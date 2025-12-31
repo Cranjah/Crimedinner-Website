@@ -318,7 +318,6 @@ footer {
     }
 
     #menu-btn { 
-    /** float: left; **/
         margin-top: 9px;
         margin-right: 100px;
         margin-bottom: 10px;
@@ -331,7 +330,6 @@ footer {
     }
 
     #search-btn {
-    /** float: right; **/
         margin-right: 22px;
         margin-top: 8px;
         padding: 5px;
